@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>LAB 9 PART B</title>
+</head>
+
+<style>
+	.main{
+		display: flex;
+		justify-content: space-around;
+		animation-name: bg;
+		animation-duration: 20s;
+	}
+	#violet{
+		height: 100px;
+		width: 100px;
+		background-color: violet;
+		display: flex;
+		animation-name: custom;
+		animation-duration: 2s;
+		animation-delay: 1s;
+		animation-fill-mode: forwards;
+	}
+	#indigo{
+		height: 100px;
+		width: 100px;
+		background-color: indigo;
+		display: flex;
+		animation-name: custom;
+		animation-duration: 2s;
+		animation-delay: 1.5s;
+		animation-fill-mode: forwards;
+	}
+	#blue{
+		height: 100px;
+		width: 100px;
+		background-color: blue;
+		display: flex;
+		animation-name: custom;
+		animation-duration: 2s;
+		animation-delay: 2s;
+		animation-fill-mode: forwards;
+	}
+	#green{
+		height: 100px;
+		width: 100px;
+		background-color: green;
+		display: flex;
+		animation-name: custom;
+		animation-duration: 2s;
+		animation-delay: 2.5s;
+		animation-fill-mode: forwards;
+	}
+	#yellow{
+		height: 100px;
+		width: 100px;
+		background-color: yellow;
+		display: flex;
+		animation-name: custom;
+		animation-duration: 2s;
+		animation-delay: 3s;
+		animation-fill-mode: forwards;
+	}
+	#orange{
+		height: 100px;
+		width: 100px;
+		background-color: orange;
+		display: flex;
+		animation-name: custom;
+		animation-duration: 2s;
+		animation-delay: 3.5s;
+		animation-fill-mode: forwards;
+	}
+	#red{
+		height: 100px;
+		width: 100px;
+		background-color: red;
+		display: flex;
+		animation-name: custom;
+		animation-duration: 2s;
+		animation-delay: 4s;
+		animation-fill-mode: forwards;
+	}
+	@keyframes bg{
+		from{
+			background-color: whitesmoke;
+		}
+		to{
+			background-color: beige;
+		}
+	}
+	@keyframes custom{
+		from{
+			margin-top: 0px;
+			transform: rotate(0deg);
+			border-radius: 0%;
+		}
+		to{
+			margin-top: 500px;
+			transform: rotate(360deg);
+			border-radius: 50%;
+		}
+	}
+
+</style>
+
+<body>
+	<div class="main">
+		<div id="violet"></div>
+		<div id="indigo"></div>
+		<div id="blue"></div>
+		<div id="green"></div>
+		<div id="yellow"></div>
+		<div id="orange"></div>
+		<div id="red"></div>
+	</div>
+</body>
+</html>
